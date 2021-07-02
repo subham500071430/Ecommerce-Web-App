@@ -7,31 +7,32 @@ import javax.persistence.Id;
 public class OrderList {
 
 @Id
-private long tid;
+private long orderid;
+private String userid;
+private long agentid;
 private String product;
-private long cid;
 private String cname;
 private String location;
-private int did;
+private String deladdress;
 
 
-public String getLocation() {
-	return location;
+public long getOrderid() {
+	return orderid;
 }
-public void setLocation(String location) {
-	this.location = location;
+public void setOrderid(long orderid) {
+	this.orderid = orderid;
 }
-public int getDid() {
-	return did;
+public String getUserid() {
+	return userid;
 }
-public void setDid(int did) {
-	this.did = did;
+public void setUserid(String userid) {
+	this.userid = userid;
 }
-public long getTid() {
-	return tid;
+public long getAgent_id() {
+	return agentid;
 }
-public void setTid(long tid) {
-	this.tid = tid;
+public void setAgent_id(long agentid) {
+	this.agentid = agentid;
 }
 public String getProduct() {
 	return product;
@@ -39,22 +40,23 @@ public String getProduct() {
 public void setProduct(String product) {
 	this.product = product;
 }
-public long getCid() {
-	return cid;
-}
-public void setCid(long cid) {
-	this.cid = cid;
-}
 public String getCname() {
 	return cname;
 }
 public void setCname(String cname) {
 	this.cname = cname;
 }
-@Override
-public String toString() {
-	return "OrderList [tid=" + tid + ", product=" + product + ", cid=" + cid + ", cname=" + cname + ", location="
-			+ location + ", did=" + did + "]";
+public String getLocation() {
+	return location;
+}
+public void setLocation(String location) {
+	this.location = location;
+}
+public String getDeladdress() {
+	return deladdress;
+}
+public void setDeladdress(String deladdress) {
+	this.deladdress = deladdress;
 }
 
 }
