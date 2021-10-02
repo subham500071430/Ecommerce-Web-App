@@ -7,16 +7,16 @@ import javax.persistence.Id;
 public class Customer {
     
 	@Id
-	private String cname;
+	private String c_name;
 	private long cid;
 	private String address;
 	private long phone;
 	
-	public String getCname() {
-		return cname;
+	public String getC_name() {
+		return c_name;
 	}
-	public void setCname(String cname) {
-		this.cname = cname;
+	public void setC_name(String c_name) {
+		this.c_name = c_name;
 	}
 	public long getCid() {
 		return cid;
@@ -38,6 +38,6 @@ public class Customer {
 	}
 	@Override
 	public String toString() {
-		return "Customer [cname=" + cname + ", cid=" + cid + ", address=" + address + ", phone=" + phone + "]";
+		return "Customer [cname=" + c_name + ", cid=" + cid + ", address=" + address + ", phone=" + phone + "]";
 	}	
 }
